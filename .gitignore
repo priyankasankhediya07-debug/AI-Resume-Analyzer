@@ -1,0 +1,9 @@
+uploads/
+reports/
+resume_report.pdf
+*.pdf
+__pycache__/
+*.pyc
+.env
+reports/**
+uploads/**

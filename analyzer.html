@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="analyzer-box"><button id="themeBtn" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
+
+<a href="index.html" class="back-btn">🏠 Home</a>
+
+<h1>AI Resume Analyzer</h1>
+
+<p class="subtitle">
+    Get ATS Score, Skill Analysis and AI-Powered Resume Suggestions
+</p>
+
+<p>Upload your resume and get instant feedback.</p>
+
+<div class="upload-box">
+
+    <label for="resumeFile">
+        📄 Drop Resume Here or Click to Upload
+    </label>
+
+    <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" style="display:none;">
+
+    <button onclick="analyzeResume()" class="hero-btn">
+        Analyze Resume
+    </button>
+
+    <div id="previewName">No file selected</div>
+
+    <div class="progress-container">
+        <div id="progressBar"></div>
+    </div>
+
+    <div id="loading" style="display:none;">
+        ⏳ Analyzing Resume...
+    </div>
+
+    <div id="result"></div>
+
+    <div id="strength"></div>
+
+    <div class="analyzer-stats">
+        <span>⭐ 95% ATS Accuracy</span>
+        <span>⚡ Results in Seconds</span>
+        <span>🔒 Secure Upload</span>
+    </div>
+
+    <div class="mini-features">
+
+        <div class="score-card">
+            <h2>ATS Score</h2>
+            <div class="circle-score">
+                <span id="circleScore">0%</span>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <h3>ATS Score</h3>
+            <p>Check resume compatibility.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Skills & Keywords</h3>
+            <p>Detect skills from any domain.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Resume Recommendations</h3>
+            <p>Get personalized improvement tips.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Detected Domain</h3>
+            <p id="domain">Loading...</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Missing Skills</h3>
+            <p id="missingSkills">Loading...</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Resume Preview</h3>
+            <p id="previewNameCard">No file selected</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Detected Skills</h3>
+            <p id="skillsList">Loading...</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Resume Strength</h3>
+            <p id="strengthText">Loading...</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Recommendations</h3>
+            <p id="recommendations">Loading...</p>
+        </div>
+
+    </div>
+
+</div>
+
+</div><div class="cta-section">
+    <h2>Ready to Improve Your Resume?</h2>
+    <p>Upload your resume and get professional ATS insights instantly.</p>
+    <a href="analyzer.html" class="hero-btn">Analyze Resume Now</a>
+</div>
+<div style="text-align:center; margin-top:30px;">
+    <button id="downloadBtn" onclick="downloadReport()">
+        📄 Download PDF Report
+    </button>
+</div>
+<footer>
+    <p>© 2026 AI Resume Analyzer | Designed & Developed by Priyanka Sankhediya</p>
+</footer><script src="script.js"></script></body>
+</html>
